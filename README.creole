@@ -1,8 +1,28 @@
 = Rails Class
 
 //This rails class was originally concieved and implemented by Blazing Cloud Team & Sarah Allen.//
---
-It focuses on giving begining rails users exposure to the basic concepts that are working in rails in a test-oriented way.
 
-Behaviour Driven Development Examples 
+----
+This class focuses on giving begining rails users exposure to the basic concepts that are working in rails in a test-oriented way.
+
+== Behaviour Driven Development (BDD)
+
+Behaviour Driven Development or BDD is a style that intends to concern itself around the specification and design of test cases that focus on a specific ability of an object or system.  *BDD-style thinking* is often constructed in terms of some 'actor' that has some kind of 'behaviour' under certain 'conditions'.
+\\\\
+Example of tests used in class:
+\\
+*  //Adddress with valid attributes should create a new instance//
+\\
+*  //Address  witout valid attributes should require a street to create a new instance//
+\\
+*  //Address  witout valid attributes should require a street to city a new instance//
+\\
+*  //Address  witout valid attributes should require a street to zip a new instance//
+\\
+
+== Orientation of Class
+
+Much of class will involve walking through the instructions in the book.  The first 24 pages will orient the user to rails generators, rails views, controllers and model basics. On page 25 we will be using the provided files in the code repository to
+experience a Test Driven approach to Rails.
+
 
