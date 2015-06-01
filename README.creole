@@ -50,3 +50,15 @@ experience a Test Driven approach to Rails.
 *** # gem 'therubyracer', :platforms => :ruby
 ** Then run 'bundle' to install gem and update Gemfile.lock 
 *** bundle
+
+**Page 25**
+* You will need to use a compatability version of rspec to be compatable with the pre-created spec files
+** Instead of | gem "rspec-rails" | Replace with:
+*** gem "rspec-rails", "2.99"
+* The text rendering is confusing please note the following
+** rails generate rspec:install
+** mdkir spec/models
+* Where it says "create a file" you can use the file in the rails_lessons repository
+** cp ../path/rails_lessons/1_models/person_spec.rb spec/models
+* Then run rake spec to see first errors
+** rake spec
