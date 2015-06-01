@@ -59,6 +59,11 @@ experience a Test Driven approach to Rails.
 ** rails generate rspec:install
 ** mdkir spec/models
 * Where it says "create a file" you can use the file in the rails_lessons repository
-** cp ../path/rails_lessons/1_models/person_spec.rb spec/models
+** cp ./rails_lessons/1_models/person_spec.rb spec/models
 * Then run rake spec to see first errors - use page 24 as a reference to fix errors
 ** rake spec
+
+
+**Page 35 & 36
+* After reading this take a look at 2_controller/controllers/people_controllers_spec.rb for examples of use.
+** this spec will pass if you install it in the roster app after running the person scafold command.
