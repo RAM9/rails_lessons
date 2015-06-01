@@ -1,2 +1,8 @@
-# Rails Class
+= Rails Class
+
+//This rails class was originally concieved and implemented by Blazing Cloud Team & Sarah Allen.//
+--
+It focuses on giving begining rails users exposure to the basic concepts that are working in rails in a test-oriented way.
+
+Behaviour Driven Development Examples 
 
