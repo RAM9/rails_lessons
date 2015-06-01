@@ -25,4 +25,28 @@ Example of tests used in class:
 Much of class will involve walking through the instructions in the book.  The first 24 pages will orient the user to rails generators, rails views, controllers and model basics. On page 25 we will be using the provided files in the code repository to
 experience a Test Driven approach to Rails.
 
+== Ammendments to RailsClassNotes PDF 
 
+**Page 5**
+* Installing the correct version of rails for these notes is as follows
+** gem install rails -v 3.2.8 --no-rdoc --no-ri
+
+**Page 10**
+* Heroku no longer supports SQLite and so the gemfile will need to be modified 
+** Instead of | gem 'sqlite3' | Replace with :
+*** group :development,:test do; gem 'sqlite3'; end 
+** Additionally add the following to have a db on heroku
+*** group :production do ; gem 'pg'; end
+** Additonally you will need to 'bundle without production' as follows:
+*** bundle --without production
+** And then check in code
+*** git add -u && git commit -m 'updated gemfile for heroku to use pg and local  to use sqlite'
+** And push to heroku
+** git push heroku master
+
+**Page 13**
+* Unless you are using OSX you will need to comment out a line in your bundler for a javascript engine.
+** Uncomment the following line in your gemfile
+*** # gem 'therubyracer', :platforms => :ruby
+** Then run 'bundle' to install gem and update Gemfile.lock 
+*** bundle
